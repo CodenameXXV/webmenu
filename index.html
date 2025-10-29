@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Меню</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1e293b; /* темно-синій фон меню */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      padding: 0 12px;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #e2e8f0;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 0 10px;
+      height: 100%;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+      color: #60a5fa;
+    }
+
+    .nav-link i {
+      font-size: 16px;
+      margin-bottom: 3px;
+      color: #93c5fd;
+    }
+
+    @media (max-width: 600px) {
+      .navigation {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 6px 0;
+      }
+      .nav-link {
+        font-size: 11px;
+        padding: 6px 4px;
+      }
+      .nav-link i {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation">
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="https://codenamexxv.github.io/teacher/" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>Головна</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://codenamexxv.github.io/base/" target="_blank" class="nav-link">
+          <i class="fas fa-book"></i>
+          <span>База знань</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://t.me/ittchr" target="_blank" class="nav-link">
+          <i class="fab fa-telegram"></i>
+          <span>Блог</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://codenamexxv.github.io/ai.github.io/" class="nav-link">
+          <i class="fas fa-tools"></i>
+          <span>Підбірка ШІ</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
